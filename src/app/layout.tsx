@@ -18,7 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={font.className}>
             <body>
-                <main className="max-w-6xl m-auto flex flex-col items-center justify-center p-16">
+                <main className="max-w-6xl m-auto flex flex-col items-center justify-center p-8 md:p-16">
                     {children}
 
                     <FaveList />

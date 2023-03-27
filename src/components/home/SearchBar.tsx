@@ -50,10 +50,10 @@ export const SearchBar = () => {
                         <button
                             type="submit"
                             disabled={isSubmitting}
-                            className="flex items-center gap-2 px-2 py-2 bg-blue-500 text-white rounded-[0.25rem] w-[3.25rem] md:w-[6.25rem]"
+                            className="flex items-center justify-center gap-2 px-2 py-2 bg-blue-500 text-white rounded-[0.25rem] w-10 md:w-[6.25rem]"
                         >
                             <CiSearch className="w-5 h-5" />
-                            <span>Submit</span>
+                            <span className="hidden md:block">Submit</span>
                         </button>
                     </form>
                 )}
