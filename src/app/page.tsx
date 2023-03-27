@@ -6,11 +6,13 @@ const Home = async () => {
     const dogs = await BreedService().getRandom({ count: 12 });
 
     return (
-        <section>
-            <SearchBar />
+        <>
+            <section className="flex flex-col">
+                <SearchBar />
 
-            <DogList dogs={dogs.message} />
-        </section>
+                <DogList dogs={dogs.message} />
+            </section>
+        </>
     );
 };
 
