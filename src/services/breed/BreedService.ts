@@ -10,8 +10,7 @@ const baseFetch = async (uri: string): Promise<BreedServiceResponse> => {
         (res) => res.json() as Promise<BreedServiceResponse>
     );
 
-    if (data.status === "error")
-        throw new Error(`Error fetching data from ${uri}`);
+    if (data.status === "error") throw new Error(`${data.message}`);
 
     return data;
 };

@@ -3,7 +3,7 @@ import { GrHomeRounded } from "react-icons/gr";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { BreedService } from "@/services/breed/BreedService";
 import { Title } from "@/components/generic/Title";
-import { DogList } from "@/components/home/DogList";
+import { DogList } from "@/components/breed/DogList";
 
 type Props = {
     params: { breed: string };
