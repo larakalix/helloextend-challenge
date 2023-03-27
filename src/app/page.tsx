@@ -1,5 +1,5 @@
-import { DogList } from "@/components/home/DogList";
-import { SearchBar } from "@/components/home/SearchBar";
+import { DogList } from "@/components/breed/DogList";
+import { SearchBar } from "@/components/generic/SearchBar";
 import { BreedService } from "@/services/breed/BreedService";
 
 const Home = async () => {

@@ -2,7 +2,7 @@
 import { AiFillHeart } from "react-icons/ai";
 import { Title } from "../generic/Title";
 import { useFavesStore } from "@/stores/faves/FaveStore";
-// import { DogList } from "../home/DogList";
+import { DogList } from "../breed/DogList";
 
 export const FaveList = () => {
     const { faves } = useFavesStore((state) => state);
@@ -11,12 +11,12 @@ export const FaveList = () => {
     return (
         <div className="w-full border-t mt-10">
             <div className="pt-10">
-                <Title className="flex items-center gap-4">
+                <Title className="flex items-center gap-4 mb-10">
                     <AiFillHeart className="w-5 text-red-500" />
                     <span>Favorites</span>
                 </Title>
 
-                {/* <DogList dogs={dogs} /> */}
+                <DogList dogs={dogs} />
             </div>
         </div>
     );

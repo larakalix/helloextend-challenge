@@ -2,15 +2,19 @@
 import { Formik } from "formik";
 import { useRouter } from "next/navigation";
 import { CiSearch } from "react-icons/ci";
-import { Title } from "../generic/Title";
+import { Title } from "./Title";
 
-export const SearchBar = () => {
+type Props = {
+    message?: string;
+};
+
+export const SearchBar = ({ message = "Dog Breeds" }: Props) => {
     const { push } = useRouter();
 
     return (
         <nav className="sticky top-0 bg-[rgb(255, 255, 255, .95)] backdrop-blur-lg z-10 py-10">
             <Title className="mb-5">
-                <span>Dog Breeds</span>
+                <span>{message}</span>
             </Title>
 
             <Formik
